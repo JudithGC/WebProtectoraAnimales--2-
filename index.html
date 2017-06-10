@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Protectora de Animales</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="icon" type="image/gif" href="images/pictures/03.png">
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+ 
+    
+</head>
+<body>
+       <header>
+		<div class="wrapper">
+			<div class="logo">Protectora de Animales</div>
+			
+			<nav>
+				<a href="index.html">Inicio</a>
+				<a href="protectora.html">La Protectora</a>
+				<a href="animales.html">Animales</a>
+				<a href="necesitamos.html">Participa</a>
+								
+			</nav>
+		</div>
+	</header>
+<!--Slider Imágenes -->
+<div class="main">   
+        <div class="slides">
+            <img src="images/1.jpg" alt="">
+            <img src="images/2.jpg" alt="">
+            <img src="images/7.jpg" alt="">
+        </div>
+</div>
+<div class="footer"> <a href="http://juustudio.hol.es/">Design by Juu Studio</a></div>
+
+<!--Codigo javascript para el slider-->
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.slides.js"></script>
+<script>
+    $(function(){
+  $(".slides").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 3000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: true,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+</script>
+</body>
+</html>
